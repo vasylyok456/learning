@@ -10,14 +10,28 @@
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
+                <!-- 
+                href може бути посиланням на:
+                - зовнішній сайт href="https://htmlreference.io"
+                - елемент в папці href="/element/div"
+                - секцію в файлі href="#footer"
+                - або дією href="mailto:alex@smith.com"
+                -->
                 <li><a href="#home">Home</a></li>
             </ul>
         </nav>
+        <!-- #about є внутрішнім якірем для посилань , 
+        який визначається за допомогою "id="about" або 
+        може бути посиланням на секцію (наприклад #footer -> <footer>)"-->
     </header>
     <h1>Lorem, ipsum.</h1>
     <h2>Lorem, ipsum dolor.</h2>
     <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        <pre>
+            Lorem ipsum dolor sit.
+        </pre>
+        <!-- "pre" використовується для наміреного розриву тексту -->
         Quisquam, eum! Ad recusandae ipsam quam quas ullam consequuntur 
         corporis soluta placeat modi maxime, perspiciatis culpa at voluptas 
         ut possimus quibusdam odit!
@@ -29,6 +43,17 @@
 />
     <p>
         <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">Facebook</a>
+        <!-- 
+        ВИДИ TARGET:
+
+        target="_blank" Opens in a new browsing context, which is usually a new tab.
+        target="_self" Opens in the current tab.
+        target="_parent" Opens in the parent browsing context, or _self is there is none.
+        target="_top" 
+
+        REL:
+        rel="nofollow" - The target is not related. Used for external websites usually.
+        -->
         <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">facebook2</a>
     </p>
     <a href="users/Danylo/downloads/logo white burnx.pdf" download>завантажити фото</a>
@@ -54,6 +79,35 @@
         </ul>
     </p>
     <h3 id="home">Home</h3>
+    <table>
+        <caption>Animal Habitat</caption>
+        <thead>
+            <tr>
+                <th>animal</th>
+                <th>number</th>
+                <th>food</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>chimp</td>
+                <td>23</td>
+                <td>banana</td>
+            </tr>
+            <tr>
+                <td>cat</td>
+                <td>1</td>
+                <td>all food</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- 
+    в таблиці, як у файлі є семантична структура thead i tbody
+    thead:
+    tr (table row) -> th (table head)
+    tbody:
+    tr -> td (table data)
+    -->
     <figure>
         <img src="images/mainlogo_mark_rgb.png" alt="mark gebauer logo">
     </figure>
@@ -73,10 +127,103 @@
         </li>
         <li>gigga nigga</li>
     </ul>
+    <table>
+    <thead>
+        <tr>
+        <th rowspan="2">Хмарний сервіс</th>
+        <!-- rowspan - вертикально займає дві клітинки -->
+        <th colspan="3">Використання</th>
+        <!-- colspan - горизонтально займає три клітинки -->
+        </tr>
+        <tr>
+        <th></th>
+        <th>Користувачі</th>
+        <th>Відвідування</th>
+        <th>Об`єм</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>Google</td>
+        <td>12000</td>
+        <td>307000</td>
+        <td>1000 Tb</td>
+        </tr>
+        <tr>
+        <td>Amazon</td>
+        <td>9000</td>
+        <td>200500</td>
+        <td>800 Tb</td>
+        </tr>
+    </tbody>
+    </table>
     <button type="button">Push me</button>
+    <!-- button is always type="button" -->
     <p>
         <button type="reset">Reset</button>
     </p>
     <button type="submit">Submit</button>
+    <dl> 
+        <!-- defitition list -->
+        <dt>Nigger</dt>
+        <!-- definition title -->
+        <dd>
+            <!-- definition data -->
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam cupiditate labore fugiat deleniti ipsam molestiae corporis quos nostrum, aut harum?
+        </dd>
+
+        <dt>Pussy</dt>
+        <dd>
+            Lorem ipsum dolor sit amet.
+        </dd>
+    </dl>
+    <p><span class="accent">oogabooga</span></p>
+    <!-- span --- Defines a generic inline container of content, that does not carry any semantic value. -->
+    <p>water=H<sub>2</sub>O</p>
+    <p>arear=130m<sup>2</sup></p>
+    <p>Останні новини на <time datetime="2019-12-14">14 грудня 2019 року</time>.</p>
+
+    <p>
+    Засідання відбулося об <time datetime="2018-07-14T11:30">11:30 ранку</time>.
+    </p>
+    <video
+    src="http://techslides.com/demos/sample-videos/small.webm"
+    poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640"
+    width="640"
+    controls
+    autoplay
+    loop
+    preload="auto"
+    ></video>
+    <video
+    poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640"
+    width="640"
+    controls
+    >
+    <source
+        src="http://techslides.com/demos/sample-videos/small.webm"
+        type="video/webm"
+    />
+    <source
+        src="http://techslides.com/demos/sample-videos/small.mp4"
+        type="video/mp4"
+    />
+    <source
+        src="http://techslides.com/demos/sample-videos/small.ogg"
+        type="video/ogg"
+    />
+    </video>
 </body>
+<footer>
+    <address>
+    м. Київ, <br />
+    Бульвар Лесі Українки, б. 26, <br />
+    4й поверх офіс 427
+    </address>
+
+    <address>
+    <a href="mailto:mango@mail.pig">mango@mail.pig</a>
+    <a href="tel:+1112223344">(111) 222-33-44</a>
+    </address>
+</footer>
 </html>
