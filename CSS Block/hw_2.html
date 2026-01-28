@@ -4,102 +4,191 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфоліо</title>
-    <link rel="stylesheet" href="./CSS/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/stylesheet.css" />
   </head>
   <body>
     <header class="header">
-      <a
-        href="homework_1.html"
-        aria-label="логотип сайту WebStudio"
-        class="nav-link"
-        lang="en"
-        ><span>Web</span>Studio</a
-      >
-      <nav class="navigation">
-        <ul class="nav-pages">
-          <li class="nav-page">Студія</li>
-          <li class="nav-page">Портфоліо</li>
-          <li class="nav-page">Контакти</li>
-        </ul>
-      </nav>
-      <div class="header-group">
-        <a class="mail" href="mailto:info@devstudio.com">infodevstudio.com</a>
-        <a class="phone" href="tel:+380961111111">+38 096 111 11 11</a>
+      <div class="header-container">
+        <a
+          href="homework_1.html"
+          aria-label="логотип сайту WebStudio"
+          class="logo"
+          lang="en"
+          ><span class="logo-accent">Web</span>Studio</a
+        >
+        <nav class="navigation">
+          <ul class="nav-pages">
+            <li class="nav-page">
+              <a class="nav-link" href="./homework_1.html">Студія</a>
+            </li>
+            <li class="nav-page">
+              <a class="nav-link" href="./hw_2.html">Портфоліо</a>
+            </li>
+            <li class="nav-page">
+              <a class="nav-link" href="#">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-group">
+          <a class="mail" href="mailto:info@devstudio.com">infodevstudio.com</a>
+          <a class="phone" href="tel:+380961111111">+38 096 111 11 11</a>
+        </div>
       </div>
     </header>
     <main>
-      <div class="btn-group">
-        <ul class="btn-list">
-          <li class="btn-item"><a class="btn-link" href="#">Усі</a></li>
-          <li class="btn-item"><a class="btn-link" href="#">Веб-сайти</a></li>
-          <li class="btn-item"><a class="btn-link" href="#">Додатки</a></li>
-          <li class="btn-item"><a class="btn-link" href="#">Дизайн</a></li>
-          <li class="btn-item"><a class="btn-link" href="#">Маркетинг</a></li>
-        </ul>
+      <div class="portfolio">
+        <div class="filters">
+          <ul class="btn-list">
+            <li class="btn-item">
+              <button class="button">Усі</button>
+            </li>
+            <li class="btn-item">
+              <button class="button">Веб-сайти</button>
+            </li>
+            <li class="btn-item">
+              <button class="button">Додатки</button>
+            </li>
+            <li class="btn-item">
+              <button class="button">Дизайн</button>
+            </li>
+            <li class="btn-item">
+              <button class="button">Маркетинг</button>
+            </li>
+          </ul>
+        </div>
+        <section class="projects">
+          <ul class="project-list">
+            <li class="project-card">
+              <img
+                class="project-image"
+                src="./images/img 2.jpg"
+                alt="Проєкт 1"
+              />
+              <div class="card-text">
+                <h3 class="project-title">Технокряк</h3>
+                <p class="project-description">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="project-card">
+              <img
+                class="project-image"
+                src="./images/img 2.jpg"
+                alt="Проєкт 1"
+              />
+              <div class="card-text">
+                <h3 class="project-title">Постер New Orlean vs Golden Star</h3>
+                <p class="project-description">Дизайн</p>
+              </div>
+            </li>
+            <li class="project-card">
+              <img
+                class="project-image"
+                src="./images/img 2.jpg"
+                alt="Проєкт 1"
+              />
+              <div class="card-text">
+                <h3 class="project-title">Ресторан Seafood</h3>
+                <p class="project-description">Додаток</p>
+              </div>
+            </li>
+            <li class="project-card">
+              <img
+                class="project-image"
+                src="./images/img-3 2.jpg"
+                alt="Проєкт 1"
+              />
+              <div class="card-text">
+                <h3 class="project-title">Проєкт Prime</h3>
+                <p class="project-description">Маркетинг</p>
+              </div>
+            </li>
+            <li class="project-card">
+              <img
+                class="project-image"
+                src="./images/img-5.jpg"
+                alt="Проєкт 1"
+              />
+              <div class="card-text">
+                <h3 class="project-title">Проєкт Боксес</h3>
+                <p class="project-description">Опис проекту</p>
+              </div>
+            </li>
+            <li class="project-card">
+              <img
+                class="project-image"
+                src="./images/img-5.jpg"
+                alt="Проєкт 1"
+              />
+              <div class="card-text">
+                <h3 class="project-title">Проєкт Боксес</h3>
+                <p class="project-description">Опис проекту</p>
+              </div>
+            </li>
+            <li class="project-card">
+              <img
+                class="project-image"
+                src="./images/img-5.jpg"
+                alt="Проєкт 1"
+              />
+              <div class="card-text">
+                <h3 class="project-title">Проєкт Боксес</h3>
+                <p class="project-description">Опис проекту</p>
+              </div>
+            </li>
+            <li class="project-card">
+              <img
+                class="project-image"
+                src="./images/img-5.jpg"
+                alt="Проєкт 1"
+              />
+              <div class="card-text">
+                <h3 class="project-title">Проєкт Боксес</h3>
+                <p class="project-description">Опис проекту</p>
+              </div>
+            </li>
+            <li class="project-card">
+              <img
+                class="project-image"
+                src="./images/img-5.jpg"
+                alt="Проєкт 1"
+              />
+              <div class="card-text">
+                <h3 class="project-title">Проєкт Боксес</h3>
+                <p class="project-description">Опис проекту</p>
+              </div>
+            </li>
+          </ul>
+        </section>
       </div>
-      <section class="projects">
-        <ul class="project-list">
-          <li class="project-card">
-            <img class="project-image" src="project1.jpg" alt="Проєкт 1" />
-            <h3 class="project-title">Технокряк</h3>
-            <p class="project-description">Веб-сайт</p>
-          </li>
-          <li class="project-card">
-            <img class="project-image" src="project1.jpg" alt="Проєкт 1" />
-            <h3 class="project-title">Постер New Orlean vs Golden Star</h3>
-            <p class="project-description">Дизайн</p>
-          </li>
-          <li class="project-card">
-            <img class="project-image" src="project1.jpg" alt="Проєкт 1" />
-            <h3 class="project-title">Ресторан Seafood</h3>
-            <p class="project-description">Додаток</p>
-          </li>
-          <li class="project-card">
-            <img class="project-image" src="project1.jpg" alt="Проєкт 1" />
-            <h3 class="project-title">Проєкт Prime</h3>
-            <p class="project-description">Маркетинг</p>
-          </li>
-          <li class="project-card">
-            <img class="project-image" src="project1.jpg" alt="Проєкт 1" />
-            <h3 class="project-title">Проєкт Боксес</h3>
-            <p class="project-description">Опис проекту</p>
-          </li>
-          <li class="project-card">
-            <img class="project-image" src="project1.jpg" alt="Проєкт 1" />
-            <h3 class="project-title">Проєкт Боксес</h3>
-            <p class="project-description">Опис проекту</p>
-          </li>
-          <li class="project-card">
-            <img class="project-image" src="project1.jpg" alt="Проєкт 1" />
-            <h3 class="project-title">Проєкт Боксес</h3>
-            <p class="project-description">Опис проекту</p>
-          </li>
-          <li class="project-card">
-            <img class="project-image" src="project1.jpg" alt="Проєкт 1" />
-            <h3 class="project-title">Проєкт Боксес</h3>
-            <p class="project-description">Опис проекту</p>
-          </li>
-          <li class="project-card">
-            <img class="project-image" src="project1.jpg" alt="Проєкт 1" />
-            <h3 class="project-title">Проєкт Боксес</h3>
-            <p class="project-description">Опис проекту</p>
-          </li>
-        </ul>
-      </section>
     </main>
     <footer class="footer">
-      <a
-        href="homework_1.html"
-        aria-label="логотип сайту WebStudio"
-        class="nav-link"
-        lang="en"
-        ><span>Web</span>Studio</a
-      >
-      <address>
-        м. Київ, пр-т Лесі Українки, 26 <br />
-        <a href="mailto:info@devstudio.com">infodevstudio.com</a> <br />
-        <a href="tel:+380961111111">+38 096 111 11 11</a>
-      </address>
+      <div class="footer-container">
+        <a
+          href="homework_1.html"
+          aria-label="логотип сайту WebStudio"
+          class="nav-link"
+          lang="en"
+          ><span class="logo-accent">Web</span>Studio</a
+        >
+        <address class="address">
+          м. Київ, пр-т Лесі Українки, 26 <br />
+          <a class="phone" href="mailto:info@devstudio.com"
+            >infodevstudio.com</a
+          >
+          <br />
+          <a class="mail" href="tel:+380961111111">+38 096 111 11 11</a>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
