@@ -52,5 +52,26 @@ const num1 = 5;
 const num2 = 10;
 
 const biggerNumber = num1 > num2 ? num1 : num2;
+
 console.log(biggerNumber);
 
+function checkAge(age) {
+    if (age >= 18) { // Change this line
+    return "You are an adult";
+  }
+    if (age < 18) {
+      return "You are a minor";
+    }
+}
+
+function checkPassword(password) {
+  const ADMIN_PASSWORD = "jqueryismyjam";
+  // Change code below this line
+
+
+  if (password === ADMIN_PASSWORD) {
+    return "Welcome!";
+  } else {
+    return "Invalid password";
+  }
+}
